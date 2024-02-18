@@ -1,0 +1,126 @@
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .completed .accent {
+    background-color: #34d399;
+  }
+  
+  .not-completed .accent {
+    background-color: #ef4444;
+  }
+  
+  .accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+  }
+  
+  
+  .cost-section {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .cost-number {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .recent-transactions {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .recent-transactions-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .transaction-list {
+    display: grid;
+    grid-gap: 16px;
+  }
+  
+  .transaction-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    position: relative;
+  }
+  
+  .completed .transaction-card {
+    background-color: #d1f5e9;
+  }
+  
+  .not-completed .transaction-card {
+    background-color: #fddfdf;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .hover-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: all 1s ease; /* Add transition */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 1s ease;
+  }
+  
+  .hover-details:hover .hidden-info {
+    display: block;
+    transition-delay: 3; /* Add transition delay */
+    opacity: 1; /* Add opacity */
+  }
+  
+  .hidden-info {
+    display: none;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 2s ease; /* Add opacity transition */
+  }
+  
+  .cost-section {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .cost-number {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  .completed .cost-number {
+    color: #34d399;
+  }
+  
+  .not-completed .cost-number {
+    color: #ef4444;
+  }
+  
